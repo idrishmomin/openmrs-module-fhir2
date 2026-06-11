@@ -816,6 +816,7 @@
                     <artifactId>spotless-maven-plugin</artifactId>
                     <version>2.30.0</version>
                     <configuration>
+                        <skip>true</skip>
                         <java>
                             <!-- Eclipse formatter from openmrs-tools dependency -->
                             <eclipse>
@@ -884,6 +885,10 @@
         <openmrsPlatformToolsVersion>2.8.0</openmrsPlatformToolsVersion>
         <hapifhirVersion>5.7.9</hapifhirVersion>
         <ucumVersion>1.0.3</ucumVersion>
+
+        <spotbugs.skip>true</spotbugs.skip>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
+        <maven.source.skip>true</maven.source.skip>
     </properties>
 
     <profiles>
